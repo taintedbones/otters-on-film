@@ -75,17 +75,17 @@ function addKeyPressHandler() {
 }
 
 function showPrevImage() {
-    "use strict";
-    var thumbnails = getThumbnailsArray(); // list of thumbnails HTML objects
-    var index = thumbnails.findIndex(compareImgUrls);
-  
-    if (index === 0) {
-      index = thumbnails.length - 1;
-    } else {
-      index--;
-    }
-  
-    setDetailsFromThumb(thumbnails[index]);  
+  "use strict";
+  var thumbnails = getThumbnailsArray(); // list of thumbnails HTML objects
+  var index = thumbnails.findIndex(compareImgUrls);
+
+  if (index === 0) {
+    index = thumbnails.length - 1;
+  } else {
+    index--;
+  }
+
+  setDetailsFromThumb(thumbnails[index]);
 }
 
 function showNextImage() {
